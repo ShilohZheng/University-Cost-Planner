@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Budget Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                University Cost Planner
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="calculator.html">Budget Calculator</a></li>
+                <li><a href="savings.html">Savings Tracker</a></li>
+                <li><a href="tips.html">Financial Tips</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- PAGE HEADER -->
+
+    <section class="calculator-hero">
+
+        <h1>University Budget Calculator</h1>
+
+        <p>
+            Estimate your yearly university expenses and
+            understand how much you may need to save.
+        </p>
+
+    </section>
+
+    <!-- CALCULATOR SECTION -->
+
+    <section class="calculator-section">
+
+        <div class="calculator-container">
+
+            <!-- INPUTS -->
+
+            <div class="input-section">
+
+                <h2>Enter Your Estimated Costs</h2>
+
+                <div class="input-box">
+                    <label>Tuition ($)</label>
+                    <input type="number" id="tuition" placeholder="8000">
+                </div>
+
+                <div class="input-box">
+                    <label>Housing / Residence ($)</label>
+                    <input type="number" id="housing" placeholder="12000">
+                </div>
+
+                <div class="input-box">
+                    <label>Food ($)</label>
+                    <input type="number" id="food" placeholder="4000">
+                </div>
+
+                <div class="input-box">
+                    <label>Transportation ($)</label>
+                    <input type="number" id="transportation" placeholder="1500">
+                </div>
+
+                <div class="input-box">
+                    <label>Books & Supplies ($)</label>
+                    <input type="number" id="books" placeholder="2000">
+                </div>
+
+                <div class="input-box">
+                    <label>Scholarships / Financial Aid ($)</label>
+                    <input type="number" id="scholarships" placeholder="3000">
+                </div>
+
+                <button onclick="calculateBudget()">
+                    Calculate Total
+                </button>
+
+            </div>
+
+            <!-- RESULTS -->
+
+            <div class="result-section">
+
+                <h2>Your Estimated Cost</h2>
+
+                <div class="result-card">
+
+                    <p>Total Estimated Cost:</p>
+
+                    <h3 id="totalCost">$0</h3>
+
+                </div>
+
+                <div class="result-card">
+
+                    <p>Estimated Monthly Cost:</p>
+
+                    <h3 id="monthlyCost">$0</h3>
+
+                </div>
+
+                <div class="result-card">
+
+                    <p>Scholarship Savings:</p>
+
+                    <h3 id="savingsAmount">$0</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FINANCIAL TIPS -->
+
+    <section class="tips-section">
+
+        <h2>Budgeting Tips for Students</h2>
+
+        <div class="tips-container">
+
+            <div class="tip-card">
+                <h3>Track Your Spending</h3>
+                <p>
+                    Monitor daily expenses to avoid overspending
+                    and maintain financial stability.
+                </p>
+            </div>
+
+            <div class="tip-card">
+                <h3>Apply for Scholarships</h3>
+                <p>
+                    Scholarships and bursaries can significantly
+                    reduce your university costs.
+                </p>
+            </div>
+
+            <div class="tip-card">
+                <h3>Create Savings Goals</h3>
+                <p>
+                    Setting monthly savings targets helps prepare
+                    for future education expenses.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Grade 12 Finance/Accounting Capstone Project
+        </p>
+
+        <p>
+            Created by Shiloh Zheng
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/calculator.js"></script>
+
+</body>
+</html>

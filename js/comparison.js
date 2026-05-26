@@ -1,10 +1,10 @@
 // COMPARISON PAGE ANIMATIONS
 
-const cards = document.querySelectorAll('.info-card');
+const infoCards = document.querySelectorAll('.info-card');
 
 window.addEventListener('scroll', () => {
 
-    cards.forEach(card => {
+    infoCards.forEach(card => {
 
         const cardTop =
             card.getBoundingClientRect().top;
@@ -23,9 +23,9 @@ window.addEventListener('scroll', () => {
 });
 
 
-// INITIAL STYLE
+// INITIAL STYLES
 
-cards.forEach(card => {
+infoCards.forEach(card => {
 
     card.style.opacity = '0';
 
@@ -33,6 +33,21 @@ cards.forEach(card => {
         'translateY(40px)';
 
     card.style.transition =
-        '0.6s';
+        '0.6s ease';
+
+});
+
+
+// TABLE ROW HOVER EFFECT
+
+const rows = document.querySelectorAll('tbody tr');
+
+rows.forEach(row => {
+
+    row.addEventListener('mouseenter', () => {
+
+        row.style.transition = '0.3s';
+
+    });
 
 });

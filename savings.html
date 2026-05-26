@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Savings Tracker</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/savings.css">
+
+    <!-- GOOGLE FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                University Cost Planner
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="comparison.html">Comparison</a></li>
+
+                <li><a href="calculator.html">Calculator</a></li>
+
+                <li><a href="savings.html">Savings Tracker</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="savings-hero">
+
+        <h1>Savings Goal Tracker</h1>
+
+        <p>
+            Set savings goals and calculate how much you need
+            to save monthly for university expenses.
+        </p>
+
+    </section>
+
+    <!-- SAVINGS CALCULATOR -->
+
+    <section class="savings-section">
+
+        <div class="savings-container">
+
+            <!-- INPUT SECTION -->
+
+            <div class="savings-input">
+
+                <h2>Create Your Savings Goal</h2>
+
+                <div class="input-box">
+
+                    <label>Total Savings Goal ($)</label>
+
+                    <input
+                        type="number"
+                        id="goal"
+                        placeholder="25000"
+                    >
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Current Savings ($)</label>
+
+                    <input
+                        type="number"
+                        id="current"
+                        placeholder="5000"
+                    >
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Months Until University</label>
+
+                    <input
+                        type="number"
+                        id="months"
+                        placeholder="12"
+                    >
+
+                </div>
+
+                <button onclick="calculateSavings()">
+                    Calculate Savings Plan
+                </button>
+
+            </div>
+
+            <!-- RESULTS SECTION -->
+
+            <div class="savings-results">
+
+                <div class="result-card">
+
+                    <p>Remaining Amount</p>
+
+                    <h3 id="remainingAmount">$0</h3>
+
+                </div>
+
+                <div class="result-card">
+
+                    <p>Monthly Savings Needed</p>
+
+                    <h3 id="monthlySavings">$0</h3>
+
+                </div>
+
+                <div class="result-card">
+
+                    <p>Progress Toward Goal</p>
+
+                    <h3 id="progressPercent">0%</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRESS BAR -->
+
+    <section class="progress-section">
+
+        <h2>Savings Progress</h2>
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TIPS SECTION -->
+
+    <section class="saving-tips">
+
+        <h2>Smart Saving Strategies</h2>
+
+        <div class="tips-container">
+
+            <div class="tip-card">
+
+                <h3>Track Spending</h3>
+
+                <p>
+                    Understanding where your money goes
+                    helps improve financial habits.
+                </p>
+
+            </div>
+
+            <div class="tip-card">
+
+                <h3>Save Consistently</h3>
+
+                <p>
+                    Small monthly contributions can
+                    grow significantly over time.
+                </p>
+
+            </div>
+
+            <div class="tip-card">
+
+                <h3>Reduce Unnecessary Costs</h3>
+
+                <p>
+                    Limiting unnecessary purchases
+                    helps reach savings goals faster.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Grade 12 Finance/Accounting Capstone Project
+        </p>
+
+        <p>
+            Created by Shiloh Zheng
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/savings.js"></script>
+
+</body>
+
+</html>
